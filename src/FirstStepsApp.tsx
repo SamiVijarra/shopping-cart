@@ -12,6 +12,8 @@ const itemsInCart: ItemInCart[] = [
   { productName: 'Super Mario', quantity: 3 },
 ];
 
+// esta es una prueba
+
 export function FirstStepsApp() {
   return (
     <>
