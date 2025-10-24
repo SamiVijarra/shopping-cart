@@ -9,7 +9,7 @@ interface Props {
 
 
 
-export const ItemCounter = ({ name, quantity =1}: Props) => {
+export const ItemCounter = ({ name, quantity = 1}: Props) => {
   const [count, setCount] = useState(quantity);
 
   const handleAdd = () =>{setCount(prevCount => prevCount + 1);}

@@ -21,17 +21,17 @@ const MyStyles: CSSProperties = {
 export function MyAwesomeApp() {
 
   return( 
-  <>
-    <h1>{FistName}</h1>
+  <div data-testid= "div-app">
+    <h1 data-testid= "first-name-title">{FistName}</h1>
       <h3>{LastName}</h3>
       
-      <p>{favoriteGames.join(', ')}</p>
+      <p className="favorite-games">{favoriteGames.join(', ')}</p>
       <p>{2 + 2}</p>
 
       <h1>{isActive ? 'Activo' : 'No activo'}</h1>
       <p
         style={MyStyles}
       >{JSON.stringify(address)}</p>
-  </>)
+  </div>)
 }
 
